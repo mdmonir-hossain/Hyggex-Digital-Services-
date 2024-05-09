@@ -1,6 +1,9 @@
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
+import { GrHomeRounded } from "react-icons/gr";
+import { IoIosArrowForward } from "react-icons/io";
 const Nav = () => {
-    return (
+  return (
+    <div>
       <div className="flex justify-between items-center">
         <img src={logo} className="w-[20%] j" />
         <ul className="flex justify-between items-center gap-5 text-lg text-[#3A3740]">
@@ -17,7 +20,15 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-    );
+      <div className="flex items-center text-lg mt-10 gap-2">
+        <GrHomeRounded />
+        <IoIosArrowForward />
+        Flashcard <IoIosArrowForward />
+        Mathematics <IoIosArrowForward />
+        <span className="text-[#06286E] font-bold">Relation & Functions</span>
+      </div>
+    </div>
+  );
 };
 
 export default Nav;
